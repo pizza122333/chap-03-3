@@ -1,0 +1,31 @@
+#include <iostream>
+#include "opencv2/opencv.hpp"
+
+using namespace std;
+using namespace cv;
+
+int main() {
+    // 1. mat1: 2x2 float 행렬
+    float data1[] = { 3.5f, 2.1f, -1.5f, -6.5f };
+    Mat mat1(2, 2, CV_32FC1, data1);
+
+    // 2. mat2: 3x3 float 행렬 (정수형으로 보이나 계산 편의상 float 권장)
+    float data2[] = { 0, 2, -1, 5, 10, 8, 6, -7, 9 };
+    Mat mat2(3, 3, CV_32FC1, data2);
+
+    // 3. mat3: 1x4 행 행렬 (Row Vector)
+    float data3[] = { 1, 2, 3, 4 };
+    Mat mat3(1, 4, CV_32FC1, data3);
+
+    // 4. mat4: 4x1 열 행렬 (Column Vector)
+    float data4[] = { 5, 6, 7, 8 };
+    Mat mat4(4, 1, CV_32FC1, data4);
+
+    // 콘솔 출력
+    cout << "mat1 =" << endl << mat1 << endl << endl;
+    cout << "mat2 =" << endl << mat2 << endl << endl;
+    cout << "mat3 =" << endl << mat3 << endl << endl;
+    cout << "mat4 =" << endl << mat4 << endl << endl;
+
+    return 0;
+}

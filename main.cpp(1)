@@ -5,23 +5,23 @@ using namespace std;
 using namespace cv;
 
 int main() {
-    // 1. mat1: 2x2 float Çà·Ä
+    // 1. mat1: 2x2 float í–‰ë ¬
     float data1[] = { 3.5f, 2.1f, -1.5f, -6.5f };
     Mat mat1(2, 2, CV_32FC1, data1);
 
-    // 2. mat2: 3x3 float Çà·Ä (Á¤¼öÇüÀ¸·Î º¸ÀÌ³ª °è»ê ÆíÀÇ»ó float ±ÇÀå)
+    // 2. mat2: 3x3 float í–‰ë ¬ (ì •ìˆ˜í˜•ìœ¼ë¡œ ë³´ì´ë‚˜ ê³„ì‚° í¸ì˜ìƒ float ê¶Œì¥)
     float data2[] = { 0, 2, -1, 5, 10, 8, 6, -7, 9 };
     Mat mat2(3, 3, CV_32FC1, data2);
 
-    // 3. mat3: 1x4 Çà Çà·Ä (Row Vector)
+    // 3. mat3: 1x4 í–‰ í–‰ë ¬ (Row Vector)
     float data3[] = { 1, 2, 3, 4 };
     Mat mat3(1, 4, CV_32FC1, data3);
 
-    // 4. mat4: 4x1 ¿­ Çà·Ä (Column Vector)
+    // 4. mat4: 4x1 ì—´ í–‰ë ¬ (Column Vector)
     float data4[] = { 5, 6, 7, 8 };
     Mat mat4(4, 1, CV_32FC1, data4);
 
-    // ÄÜ¼Ö Ãâ·Â
+    // ì½˜ì†” ì¶œë ¥
     cout << "mat1 =" << endl << mat1 << endl << endl;
     cout << "mat2 =" << endl << mat2 << endl << endl;
     cout << "mat3 =" << endl << mat3 << endl << endl;
